@@ -1,92 +1,53 @@
 @extends('layouts.app')
 
-@section('title', 'Enter the world of small business acquisitions')
-@section('description', 'BiteSizeBiz is a platform for small business acquisitions. Subscribe for a case study on how I acquired Sourcely.ai for $4k and grew it to a valuation of $150k in 4 months. Come explore the world of buying and selling micro startups with me!')
-@section('keywords', 'small business, acquisitions, business, investment, startup, entrepreneurship')
-@section('author', 'BiteSizeBiz')
-@section('canonical', env('APP_URL'))
-
+@section('title', "Welcome to Dev Shah's Micro Private Equity Firm")
+@section('description', "Discover how Dev Shah's firm helps individuals acquire small-scale online businesses for as low as $5,000 to $25,000.")
+@section('keywords', "online business acquisition, micro private equity, small-scale investment, Dev Shah")
 
 @section('content')
 <div class="xoxo_fn_pages">
     <div class="xoxo_fn_page_ajax">
         <div class="xoxo_fn_index">
-            <div class="fn__bp_slider" data-animation="disable">
-                <div class="container">
-                    <div class="bp_slider_in">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper" id="slider-blog-posts-container">
-                                @foreach ($posts as $post)
-                                    @include('partials.slider-post', ['post' => $post])
-                                @endforeach
-                            </div>
-                        </div>
 
-                        <div class="slider__nav">
-                            <a href="#" class="slider_nav prev">
-                                <img class="fn__svg " src="/images/svg/arrowo.svg" alt="svg">
-                            </a>
-                            <a href="#" class="slider_nav next">
-                                <img class="fn__svg " src="/images/svg/arrowo.svg" alt="svg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <section id="value-proposition">
+                <h2>Our Unique Value Proposition</h2>
+                <p>We specialize in helping individuals acquire online businesses for as low as $5,000 to $25,000. Our firm is dedicated to making online business ownership accessible and profitable.</p>
+            </section>
 
-            <!-- WITH SIDEBAR -->
-            <div class="xoxo_fn_hassidebar">
-                <div class="container">
-                    <div class="sidebarpage">
-                        <div class="xoxo_fn_leftsidebar">
-                            <div class="ls_content">
-                                <div class="xoxo_fn_bloglist blog_layout_masonry">
-                                    <ul id="blog-posts-container">
-                                        @foreach ($posts as $post)
-                                            @if ($post->type === "link")
-                                                @include('partials.link-post', ['post' => $post])
-                                            @elseif ($post->type === "video")
-                                                @include('partials.video-post', ['post' => $post])
-                                            @else
-                                                @include('partials.post', ['post' => $post])
-                                            @endif
+            <section id="about-dev-shah">
+                <h2>About Dev Shah</h2>
+                <p>Dev Shah is a seasoned entrepreneur with a passion for helping others succeed in the online business world. His approachable nature and expertise make him the perfect partner for your investment journey.</p>
+            </section>
 
-                                            {{-- Insert trending posts after the 5th post --}}
-                                            @if ($loop->index == 4)
-                                                @include('partials.trending-posts')
-                                            @endif
-                                        @endforeach
-                                    </ul>
-                                </div>
+            <section id="how-it-works">
+                <h2>How It Works</h2>
+                <ol>
+                    <li>Explore available businesses.</li>
+                    <li>Consult with our experts.</li>
+                    <li>Make an informed investment.</li>
+                    <li>Grow your new business with our support.</li>
+                </ol>
+            </section>
 
-                                <!-- Pagination will populate this area -->
-                                <div class="xoxo_fn_pagination" id="blog-pagination">
-                                    <div class="container">
-                                        <div class="pag_in">
-                                            <div class="pag_inner">
-                                                <span class="left_wing"></span>
-                                                <span class="right_wing"></span>
-                                                <ul>
-                                                    <li class="active">
-                                                        <span class="current">1</span>
-                                                    </li>
-                                                    <li>
-                                                        <a href="page/2/index.html" class="inactive">2</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <section id="testimonials">
+                <h2>Testimonials</h2>
+                <p>"Working with Dev Shah was a game-changer for my investment portfolio. His insights and support were invaluable." - Happy Client</p>
+            </section>
 
-                        @include('includes.sidebar')
-                    </div>
-                </div>
-            </div>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="/contact" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <footer>
+                <p>&copy; 2023 Dev Shah's Micro Private Equity Firm. All rights reserved.</p>
+            </footer>
         </div>
-        <!-- /WITH SIDEBAR -->
     </div>
 </div>
 @endsection

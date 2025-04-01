@@ -7,7 +7,7 @@
         </div>
         <div class="title_holder">
             <h3>
-                <a href="{{ $post->type == 'link' ? $post->slug : $post->slug }}">{{ $post->title }}</a>
+                <a href="{{ $post->type == 'link' ? $post->slug : $post->link }}">{{ $post->title }}</a>
             </h3>
             <div class="fn__meta">
                 <p>

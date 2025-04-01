@@ -21,7 +21,7 @@ class PostSeeder extends Seeder
                 'content_path' => 'posts/how-to-start-investing-in-online-businesses-with-just-5k.md',
                 'tags' => '["online businesses", "under 5k", "investing", "marketplace", "digital products"]',
                 'image_url' => '/images/blog/how-to-start-investing-in-online-businesses-with-just-5k.webp',
-                'image_urls' => '["/images/blog/how-to-start-investing-in-online-businesses-with-just-5k.webp","/images/blog/how-to-start-investing-in-online-businesses-with-just-5k-2.webp","/images/blog/how-to-start-investing-in-online-businesses-with-just-5k-3.webp","/images/blog/how-to-start-investing-in-online-businesses-with-just-5k-4.webp"]',
+                'image_urls' => '["/images/blog/how-to-start-investing-in-online-businesses-with-just-5k.webp","/images/blog/how-to-start-investing-in-online-businesses-with-just-5k-2.jpg","/images/blog/how-to-start-investing-in-online-businesses-with-just-5k-3.jpg","/images/blog/how-to-start-investing-in-online-businesses-with-just-5k-4.jpg"]',
                 'video_url' => null,
                 'slug' => 'how-to-start-investing-in-online-businesses-with-just-5k',
                 'type' => 'post',

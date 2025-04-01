@@ -680,8 +680,8 @@ var PoptioEntityMap = {
 							};
 
 							$.ajax({
-								type: 'POST',
-								url: XoxoAjax.ajax_url,
+								type: 'GET',
+								url: '/api/get-prev-post',
 								cache: false,
 								data: requestData,
 								success: function(data) {
@@ -690,8 +690,12 @@ var PoptioEntityMap = {
 										$('.fn__blog_anchor').addClass('active');
 										XoxoBody.addClass('blog-anchor-active');
 									}
-									var fnQueriedObj 	= $.parseJSON(data); //get the data object
-									singlePost.append(fnQueriedObj.output);
+									// var fnQueriedObj 	= $.parseJSON(data); //get the data object
+									// singlePost.append(fnQueriedObj.output);
+
+									var fnQueriedObj 	= data; //get the data object
+									singlePost.append(fnQueriedObj);
+
 									XoxoInit.init();
 									XoxoNextPostWait = false;
 									XoxoBody.removeClass('prev-post-loading');
@@ -1103,7 +1107,21 @@ var PoptioEntityMap = {
 				cache: false,
 				data: requestData,
 				success: function(data) {
-					var fnQueriedObj 	= $.parseJSON(data);
+					var fnQueriedObj;
+					
+					// Check if data is already a JavaScript object or a JSON string
+					if (typeof data === 'object') {
+						fnQueriedObj = data;
+					} else {
+						try {
+							fnQueriedObj = $.parseJSON(data);
+						} catch (e) {
+							console.error("Error parsing JSON:", e);
+							return;
+						}
+					}
+					
+					console.log(fnQueriedObj);
 					
 					// append new items into grid 
 					resultList.html(fnQueriedObj.list);

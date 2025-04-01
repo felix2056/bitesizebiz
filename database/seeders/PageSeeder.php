@@ -17,40 +17,40 @@ class PageSeeder extends Seeder
         Page::create([
             'title' => 'Home Page',
             'slug' => 'home',
+            'excerpt' => 'This is the home page. It is the main page of the website. It is the first page that people see when they visit the website.',
             'content' => 'Home',
-            'image' => 'home.jpg',
             'url' => '/',
         ]);
 
         Page::create([
             'title' => 'About Page',
             'slug' => 'about',
+            'excerpt' => 'This is the about page. It is the page that tells people about the website.',
             'content' => 'About',
-            'image' => 'about.jpg',
             'url' => '/about',
         ]);
 
         Page::create([
             'title' => 'Contact Page',
             'slug' => 'contact',
+            'excerpt' => 'This is the contact page. It is the page that allows people to contact the website.',
             'content' => 'Contact',
-            'image' => 'contact.jpg',
             'url' => '/contact',
         ]);
 
         Page::create([
             'title' => 'Privacy Policy Page',
             'slug' => 'privacy-policy',
+            'excerpt' => 'This is the privacy policy page. It is the page that tells people about the privacy policy of the website.',
             'content' => 'Privacy Policy',
-            'image' => 'privacy-policy.jpg',
             'url' => '/privacy-policy',
         ]);
 
         Page::create([
             'title' => 'Terms of Service Page',
             'slug' => 'terms-of-service',
+            'excerpt' => 'This is the terms of service page. It is the page that tells people about the terms of service of the website.',
             'content' => 'Terms of Service',
-            'image' => 'terms-of-service.jpg',
             'url' => '/terms-of-service',
         ]);
     }

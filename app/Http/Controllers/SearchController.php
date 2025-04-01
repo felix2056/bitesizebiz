@@ -9,6 +9,50 @@ use App\Models\Page;
 
 class SearchController extends Controller
 {
+    public function index(Request $request)
+    {
+        $text = $request->input('s');
+        $perPage = 10; // Number of items per page
+
+        // Get results from pages
+        $pageResults = Page::where('title', 'like', '%' . $text . '%')->get();
+        
+        // Get results from posts
+        $postResults = Post::where('title', 'like', '%' . $text . '%')->get();
+        
+        // Combine and sort results
+        $allResults = collect([]);
+        
+        // Sort by created_at
+        $sortedResults = $allResults->sortByDesc('created_at');
+        
+        // Paginate the results manually
+        $currentPage = $request->input('page', 1);
+        $count = $sortedResults->count();
+        
+        // Slice the results for the current page
+        $paginatedResults = $sortedResults->slice(($currentPage - 1) * $perPage, $perPage)->values();
+        
+        // Create a LengthAwarePaginator instance
+        $paginator = new \Illuminate\Pagination\LengthAwarePaginator(
+            $paginatedResults,
+            $count,
+            $perPage,
+            $currentPage,
+            [
+                'path' => $request->url(),
+                'query' => $request->query()
+            ]
+        );
+
+        return view('search', [
+            'text' => $text,
+            'count' => $count,
+            'results' => $paginatedResults,
+            'paginator' => $paginator
+        ]);
+    }
+
     public function ajaxSearch(Request $request)
     {
         // {
@@ -33,10 +77,10 @@ class SearchController extends Controller
             $postResults = Post::where('title', 'like', '%' . $text . '%')->get();
             $count += $postResults->count();
         }
-        
+
         $list = '';
         $info = "<p>We have found " . $count . " results.</p>";
-        
+
         if ($count > 0) {
             $info .= "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"/search\"><input type=\"hidden\" value=\"a\" name=\"s\" />\r\n\t\t\t\t\t <input type=\"hidden\" value=\"ajax\" name=\"from\" />\r\n\t\t\t\t\t <input type=\"submit\" class=\"submit_button\" value=\"See all Results\" />\r\n\t\t\t\t</form>";
         }
@@ -52,7 +96,7 @@ class SearchController extends Controller
                     <div class="title_holder">
                         <div class="fn__meta">
                             <p>
-                                <span class="meta_item meta_date"><img class="fn__svg " src="/svg/calendar.svg" alt="svg" />' . $result->created_at->format('M d') . '</span>
+                                <span class="meta_item meta_date"><img class="fn__svg " src="/images/svg/calendar.svg" alt="svg" />' . $result->created_at->format('M d') . '</span>
                             </p>
                         </div>
                         <div class="title">
@@ -66,17 +110,19 @@ class SearchController extends Controller
         foreach ($postResults as $result) {
             // <li><div class=\"item\"><div class=\"img_holder\" data-has-image=\"https://frenify.com/work/envato/frenify/wp/xoxo/2/wp-content/uploads/2023/02/woman-gf912e5f0d_1920-150x150.jpg\" data-bg-img=\"https://frenify.com/work/envato/frenify/wp/xoxo/2/wp-content/uploads/2023/02/woman-gf912e5f0d_1920-150x150.jpg\"><a href=\"https://frenify.com/work/envato/frenify/wp/xoxo/2/what-marriage-means-to-me/\" class=\"full_link\"></a></div><div class=\"title_holder\"><div class=\"fn__meta\"><p><span class=\"meta_item meta_date\"><img class=\"fn__svg \" src=\"https://frenify.com/work/envato/frenify/wp/xoxo/2/wp-content/themes/xoxo/framework/svg/calendar.svg\" alt=\"svg\" />Jan 5</span><span class=\"meta_item meta_category\"><a class=\" fn_last_category\" href=\"https://frenify.com/work/envato/frenify/wp/xoxo/2/category/lifestyle/\">Lifestyle</a></span></p></div><div class=\"title\"><h3 class=\"fn_title\"><a href=\"https://frenify.com/work/envato/frenify/wp/xoxo/2/what-marriage-means-to-me/\">What Marriage Means to Me</a></h3></div></div></div></li>
 
+            $image_url = $result->image_url ?? $result->image_urls[0] ?? '/images/placeholder.jpg';
+
             $list .= '
             <li>
                 <div class="item">
-                    <div class="img_holder" data-has-image="' . $result->image . '" data-bg-img="' . $result->image . '">
+                    <div class="img_holder" data-has-image="' . $image_url . '" data-bg-img="' . $image_url . '">
                         <a href="' . $result->link . '" class="full_link"></a>
                     </div>
                     <div class="title_holder">
                         <div class="fn__meta">
                             <p>
-                                <span class="meta_item meta_date"><img class="fn__svg " src="/svg/calendar.svg" alt="svg" />' . $result->created_at->format('M d') . '</span>
-                                <span class="meta_item meta_category"><a class=" fn_last_category" href="' . $result->category->link . '">' . $result->category->title . '</a></span>
+                                <span class="meta_item meta_date"><img class="fn__svg " src="/images/svg/calendar.svg" alt="svg" />' . $result->created_at->format('M d') . '</span>
+                                <span class="meta_item meta_category"><a class=" fn_last_category" href="' . $result->category->link . '">' . $result->category->name . '</a></span>
                             </p>
                         </div>
                         <div class="title">

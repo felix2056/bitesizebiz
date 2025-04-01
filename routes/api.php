@@ -19,3 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/ajax-search', [App\Http\Controllers\SearchController::class, 'ajaxSearch']);
+
+Route::get('/get-prev-post', [App\Http\Controllers\BlogController::class, 'getPrevPost']);
+Route::get('/get-next-post', [App\Http\Controllers\BlogController::class, 'getNextPost']);

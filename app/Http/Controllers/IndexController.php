@@ -11,9 +11,14 @@ class IndexController extends Controller
 {
     public function index()
     {
+        return view('index');
+    }
+
+    public function blog()
+    {
         $posts = Post::where('is_published', true)->get();
         $categories = Category::withCount('posts')->get();
 
-        return view('index', compact('posts', 'categories'));
+        return view('blog', compact('posts', 'categories'));
     }
 }
