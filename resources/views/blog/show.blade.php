@@ -170,7 +170,7 @@
                                                                     @foreach ($post->author_social_links as $socialLink)
                                                                     <li>
                                                                         <a title="{{ $socialLink['name'] }}" href="{{ $socialLink['url'] }}" target="_blank">
-                                                                            <img class="fn__svg icon_{{ $socialLink['name'] }}" src="/images/svg/social/{{ $socialLink['name'] }}.svg" />
+                                                                            <img class="fn__svg icon_{{ $socialLink['name'] }}" src="/images/svg/social/{{ strtolower($socialLink['name']) }}.svg" />
                                                                         </a>
                                                                     </li>
                                                                     @endforeach
