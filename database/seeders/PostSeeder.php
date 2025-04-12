@@ -30,6 +30,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => true,
                 'is_featured' => false,
                 'is_published' => true,
@@ -52,6 +71,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -63,6 +101,7 @@ class PostSeeder extends Seeder
                 'title' => 'Step-by-Step Process to Buy an Online Business on a Budget',
                 'description' => 'Lets discuss about the key factors to consider, the best platforms to find opportunities, and the strategies for evaluating and acquiring online businesses.',
                 'content_path' => 'posts/step-by-step-process-to-buy-an-online-business-on-a-budget.md',
+                'tags' => '["online businesses", "under 25k", "marketplace", "investing", "websites"]',
                 'image_url' => '/images/blog/step-by-step-process-to-buy-an-online-business-on-a-budget.webp',
                 'image_urls' => '[]',
                 'video_url' => null,
@@ -73,12 +112,30 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
                 'created_at' => '2025-03-08 00:00:00',
                 'updated_at' => '2025-03-08 00:00:00',
-                'tags' => '["online businesses", "under 25k", "marketplace", "investing", "websites"]',
             ],
             [
                 'id' => 4,
@@ -96,6 +153,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -118,6 +194,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -140,6 +235,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -162,6 +276,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -184,6 +317,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -206,6 +358,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -228,6 +399,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -250,6 +440,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -272,6 +481,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -294,6 +522,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
@@ -316,6 +563,25 @@ class PostSeeder extends Seeder
                 'author' => 'Dev Shah',
                 'author_link' => '/author/devshah',
                 'author_image_url' => '/images/devshah.jpg',
+                'author_description' => 'I’m an entrepreneurial student diving into the exciting world of small business acquisitions for under $25k on Acquire.com. At 18, I’m building a thriving side hustle in the sub-$25k space and developing an Ed-tech startup—check out eleven59.ai. I’m also launching Sourcely.net, an AI tool for students, and aiming for $10k MRR. Join me as I navigate the small biz landscape.',
+                'author_social_links' => '[
+                    {
+                        "name": "Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100016824821262"
+                    },
+                    {
+                        "name": "Twitter",
+                        "url": "https://twitter.com/devlikesbizness"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/devlikesbizness/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "url": "https://www.instagram.com/devlikesbizness/"
+                    }
+                ]',
                 'is_popular' => false,
                 'is_featured' => false,
                 'is_published' => true,
