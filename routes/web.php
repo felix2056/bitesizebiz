@@ -18,4 +18,5 @@ Route::get('/', [App\Http\Controllers\IndexController::class, 'blog']);
 Route::match(['get', 'post'], '/contact', [App\Http\Controllers\IndexController::class, 'contact']);
 
 Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'show']);
+Route::get('/category/{slug}', [App\Http\Controllers\CategoryController::class, 'show']);
 Route::get('/search', [App\Http\Controllers\SearchController::class, 'index']);

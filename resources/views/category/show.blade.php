@@ -11,6 +11,37 @@
 <div class="xoxo_fn_pages">
     <div class="xoxo_fn_page_ajax">
         <div class="xoxo_fn_index">
+
+            <!-- PAGE TITLE -->
+            <div class="xoxo_fn_pagetitle">
+                <div class="container">
+                    <div class="pagetitle">
+                        <h3 class="fn__title">{{ $category->name }}</h3>
+                        <div class="xoxo_fn_breadcrumbs">
+                            <ul id="breadcrumbs" class="breadcrumbs">
+                                <li class="item-home">
+                                    <a class="bread-link bread-home" href="/" title="Home">Home</a>
+                                </li>
+                                <li class="separator separator-home">
+                                    <span></span>
+                                </li>
+                                <li class="item-home">
+                                    <a class="bread-link bread-home" href="/" title="Categories">Categories</a>
+                                </li>
+                                <li class="separator separator-home">
+                                    <span></span>
+                                </li>
+                                <li class="item-current item-142">
+                                    <span class="bread-current bread-142">{{ $category->name }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /PAGE TITLE -->
+
+            @if ($posts->count() > 0)
             <div class="fn__bp_slider" data-animation="disable">
                 <div class="container">
                     <div class="bp_slider_in">
@@ -33,7 +64,8 @@
                     </div>
                 </div>
             </div>
-
+            @endif
+            
             <!-- WITH SIDEBAR -->
             <div class="xoxo_fn_hassidebar">
                 <div class="container">

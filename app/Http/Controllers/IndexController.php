@@ -39,7 +39,7 @@ class IndexController extends Controller
 
     public function blog()
     {
-        $posts = Post::where('is_published', true)->get();
+        $posts = Post::where('is_published', true)->paginate(50);
         $categories = Category::withCount('posts')->get();
 
         return view('blog', compact('posts', 'categories'));
