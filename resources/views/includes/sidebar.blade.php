@@ -206,25 +206,13 @@
                 </div>
 
                 <div class="tagcloud">
-                    <a href="/tags/online-businesses" class="tag-cloud-link tag-link-23 tag-link-position-1" style="font-size: 14px;">Online Businesses</a>
-                    <a href="/tags/saas" class="tag-cloud-link tag-link-38 tag-link-position-2" style="font-size: 14px;">SaaS</a>
-                    <a href="/tags/content" class="tag-cloud-link tag-link-31 tag-link-position-3" style="font-size: 14px;">Content</a>
-                    <a href="/tags/marketplace" class="tag-cloud-link tag-link-36 tag-link-position-4" style="font-size: 14px;">Marketplace</a>
-                    <a href="/tags/e-commerce" class="tag-cloud-link tag-link-26 tag-link-position-5" style="font-size: 14px;">E-commerce</a>
-                    <a href="/tags/amazon-fba" class="tag-cloud-link tag-link-29 tag-link-position-6" style="font-size: 14px;">Amazon FBA</a>
-                    <a href="/tags/shopify" class="tag-cloud-link tag-link-25 tag-link-position-7" style="font-size: 14px;">Shopify</a>
-                    <a href="/tags/youtube" class="tag-cloud-link tag-link-24 tag-link-position-8" style="font-size: 14px;">Youtube</a>
-                    <a href="/tags/lifestyle" class="tag-cloud-link tag-link-33 tag-link-position-9" style="font-size: 14px;">Service</a>
-                    <a href="/tags/digital-products" class="tag-cloud-link tag-link-32 tag-link-position-10" style="font-size: 14px;">Digital Products</a>
-                    <a href="/tags/dropshipping" class="tag-cloud-link tag-link-27 tag-link-position-11" style="font-size: 14px;">Dropshipping</a>
-                    <a href="/tags/apps" class="tag-cloud-link tag-link-22 tag-link-position-12" style="font-size: 14px;">Apps</a>
-                    <a href="/tags/websites" class="tag-cloud-link tag-link-37 tag-link-position-13" style="font-size: 14px;">Websites</a>
-                    <a href="/tags/crypto" class="tag-cloud-link tag-link-35 tag-link-position-14" style="font-size: 14px;">Crypto</a>
-                    <a href="/tags/blogging" class="tag-cloud-link tag-link-34 tag-link-position-15" style="font-size: 14px;">Blog</a>
-                    <a href="/tags/adsense" class="tag-cloud-link tag-link-28 tag-link-position-16" style="font-size: 14px;">Adsense</a>
-                    <a href="/tags/under-25k" class="tag-cloud-link tag-link-30 tag-link-position-17" style="font-size: 14px;">Under $25K</a>
-                    <a href="/tags/under-10k" class="tag-cloud-link tag-link-30 tag-link-position-18" style="font-size: 14px;">Under $10K</a>
-                    <a href="/tags/under-5k" class="tag-cloud-link tag-link-30 tag-link-position-19" style="font-size: 14px;">Under $5K</a>
+                    @php
+                    $tags = \App\Models\Tag::all();
+                    @endphp
+
+                    @foreach ($tags as $tag)
+                    <a href="{{ $tag->link }}" class="tag-cloud-link tag-link-{{ $tag->id }} tag-link-position-{{ $tag->position }}" style="font-size: 14px;">{{ $tag->name }}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
