@@ -1343,7 +1343,7 @@
                                         </div>
                                     </div>
                                     <div class="footer_copyright">
-                                        <p> © 2025 <a href="https://bitesizebiz.com/" target="_blank">Bitesizebiz</a>, All Rights Reserved. </p>
+                                        <p> © 2025 <a href="https://buyingabiz.com">BuyingABiz</a>, All Rights Reserved. </p>
                                     </div>
                                 </div>
                             </div>
