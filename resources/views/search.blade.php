@@ -3,7 +3,7 @@
 @section('title', 'Search Results for ' . $text)
 @section('description', 'Search Results for ' . $text)
 @section('keywords', 'Search Results for ' . $text)
-@section('author', 'BiteSizeBiz')
+@section('author', 'BuyingABiz')
 @section('canonical', env('APP_URL'))
 
 @section('content')

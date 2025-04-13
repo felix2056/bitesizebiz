@@ -3,7 +3,7 @@
 @section('title', $post->title)
 @section('description', $post->description)
 @section('keywords', implode(', ', $post->tags))
-@section('author', 'BiteSizeBiz')
+@section('author', 'BuyingABiz')
 @section('canonical', env('APP_URL') . $post->link)
 @section('og_image', $post->image_url)
 

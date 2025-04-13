@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>@yield('title') | BiteSizeBiz</title>
+    <title>@yield('title') | BuyingABiz</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,10 +11,10 @@
     
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="@yield('title') | BiteSizeBiz">
+    <meta property="og:title" content="@yield('title') | BuyingABiz">
     <meta property="og:description" content="@yield('description')">
     <meta property="og:url" content="@yield('canonical')">
-    <meta property="og:site_name" content="BiteSizeBiz">
+    <meta property="og:site_name" content="BuyingABiz">
     <meta property="og:image" content="@yield('og_image', asset('/images/default-og-image.jpg'))">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -23,7 +23,7 @@
     <meta property="twitter:site" content="@devlikebusiness">
     <meta property="twitter:creator" content="@devlikebusiness">
     <meta property="twitter:title" content="@yield('title', 'Enter the world of small business acquisitions')">
-    <meta property="twitter:description" content="@yield('description', 'BiteSizeBiz is a platform for small business acquisitions. Subscribe for a case study on how I acquired Sourcely.ai for $4k and grew it to a valuation of $150k in 4 months. Come explore the world of buying and selling micro startups with me!')">
+    <meta property="twitter:description" content="@yield('description', 'BuyingABiz is a platform for small business acquisitions. Subscribe for a case study on how I acquired Sourcely.ai for $4k and grew it to a valuation of $150k in 4 months. Come explore the world of buying and selling micro startups with me!')">
     <meta property="twitter:url" content="@yield('canonical', env('APP_URL'))">
     <meta property="twitter:image" content="@yield('og_image', asset('/images/default-og-image.jpg'))">
     <meta property="twitter:image:width" content="1200">

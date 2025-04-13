@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Enter the world of small business acquisitions')
-@section('description', 'BiteSizeBiz is a platform for small business acquisitions. Subscribe for a case study on how I acquired Sourcely.ai for $4k and grew it to a valuation of $150k in 4 months. Come explore the world of buying and selling micro startups with me!')
+@section('description', 'BuyingABiz is a platform for small business acquisitions. Subscribe for a case study on how I acquired Sourcely.ai for $4k and grew it to a valuation of $150k in 4 months. Come explore the world of buying and selling micro startups with me!')
 @section('keywords', 'small business, acquisitions, business, investment, startup, entrepreneurship')
-@section('author', 'BiteSizeBiz')
+@section('author', 'BuyingABiz')
 @section('canonical', env('APP_URL'))
 
 
