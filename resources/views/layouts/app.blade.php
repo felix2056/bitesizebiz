@@ -58,7 +58,7 @@
     <link rel="stylesheet" id="xoxo-fn-fontello-css" href="/wp-content/themes/xoxo/framework/css/fontello_ver%3Drel4_1.1.0.css" type="text/css" media="all">
     <link rel="stylesheet" id="xoxo-fn-widgets-css" href="/wp-content/themes/xoxo/framework/css/widgets_ver%3Drel4_1.1.0.css" type="text/css" media="all">
     <link rel="stylesheet" id="xoxo-fn-woocommerce-css" href="/wp-content/themes/xoxo/config/config-woo/woocommerce_ver%3Drel4_1.1.0.css" type="text/css" media="all">
-    <link rel="stylesheet" id="xoxo-fn-stylesheet-css" href="/wp-content/themes/xoxo/style_ver%3Drel4_1.1.0.css" type="text/css" media="all">
+    <link rel="stylesheet" id="xoxo-fn-stylesheet-css" href="/wp-content/themes/xoxo/styles.css" type="text/css" media="all">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Work%20Sans:400%7CMontserrat:400&amp;display=swap&amp;ver=1683456420">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work%20Sans:400%7CMontserrat:400&amp;display=swap&amp;ver=1683456420" media="print" onload="this.media='all'">
     <link rel="stylesheet" id="xoxo_fn_inline-css" href="/wp-content/themes/xoxo/framework/css/inline_ver%3Dhttps_/frenify.com/work/envato/frenify/wp/xoxo/2/wp-content/themes/xoxo.css" type="text/css" media="all">
@@ -622,6 +622,7 @@
 
         </style>
     </noscript>
+
     <style class="wp-fonts-local" type="text/css">
         @font-face {
             font-family: Inter;
@@ -913,14 +914,14 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="woo__opener">
+                            {{-- <div class="woo__opener">
                                 <a href="#">
                                     <span class="icon">
                                         <img class="fn__svg " src="/images/svg/cart.svg" alt="svg">
                                     </span>
                                     <span class="count">0</span>
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 
@@ -956,9 +957,9 @@
                                             </li> --}}
 
                                             <li id="menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
-                                                <a href="#">
+                                                <a href="https://pocket-deals.com" target="_blank">
                                                     <span>
-                                                        <span>Acquisition AI</span>
+                                                        <span>PocketFund</span>
                                                         <span class="suffix">//</span>
                                                     </span>
                                                 </a>
@@ -1032,9 +1033,9 @@
                                         </li>
 
                                         <li id="menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
-                                            <a href="#">
+                                            <a href="https://pocket-deals.com" target="_blank">
                                                 <span>
-                                                    <span>Acquisition AI</span>
+                                                    <span>PocketFund</span>
                                                     <span class="suffix">//</span>
                                                 </span>
                                             </a>
@@ -1121,11 +1122,11 @@
                                     </a>
                                 </div>
 
-                                <div class="icon_bar__item icon_bar__woo">
+                                {{-- <div class="icon_bar__item icon_bar__woo">
                                     <a href="#">
                                         <img class="fn__svg " src="/images/svg/cart.svg" alt="svg">
                                     </a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
