@@ -45,6 +45,7 @@
     <link rel="https://api.w.org/" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/wp-json/">
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/xmlrpc.php?rsd">
 
+    {{-- wp block library css --}}
     <link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min_ver%3D6.7.2.css" type="text/css" media="all">
     <link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles_ver%3D5.9.8.css" type="text/css" media="all">
     <link rel="stylesheet" id="woocommerce-layout-css" href="/wp-content/plugins/woocommerce/assets/css/woocommerce-layout_ver%3D9.3.3.css" type="text/css" media="all">
@@ -58,7 +59,11 @@
     <link rel="stylesheet" id="xoxo-fn-fontello-css" href="/wp-content/themes/xoxo/framework/css/fontello_ver%3Drel4_1.1.0.css" type="text/css" media="all">
     <link rel="stylesheet" id="xoxo-fn-widgets-css" href="/wp-content/themes/xoxo/framework/css/widgets_ver%3Drel4_1.1.0.css" type="text/css" media="all">
     <link rel="stylesheet" id="xoxo-fn-woocommerce-css" href="/wp-content/themes/xoxo/config/config-woo/woocommerce_ver%3Drel4_1.1.0.css" type="text/css" media="all">
-    
+
+    {{-- font awesome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    {{-- main css --}}
     <link rel="stylesheet" id="xoxo-fn-stylesheet-css" href="/wp-content/themes/xoxo/styles.css" type="text/css" media="all">
     <link rel="stylesheet" id="xoxo-fn-responsive-css" href="/wp-content/themes/xoxo/responsive.css" type="text/css" media="all">
 
@@ -887,8 +892,8 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a title="pinterest" href="https://www.youtube.com/channel/UCW_EPM8iqmn27qeT65qLMug" target="_blank">
-                                            <img class="fn__svg" src="/images/svg/social/pinterest.svg" alt="svg">
+                                        <a title="youtube" href="https://www.youtube.com/channel/UCW_EPM8iqmn27qeT65qLMug" target="_blank">
+                                            <img class="fn__svg" src="/images/svg/social/youtube.svg" alt="svg">
                                         </a>
                                     </li>
                                     <li>
@@ -1111,10 +1116,10 @@
                                     </a>
                                     <div class="xoxo_fn_social_list">
                                         <ul>
-                                            <li><a title="facebook" href="#" target="_blank"><img class="fn__svg" src="/images/svg/social/facebook.svg" alt="svg"></a></li>
-                                            <li><a title="twitter" href="#" target="_blank"><img class="fn__svg" src="/images/svg/social/twitter.svg" alt="svg"></a></li>
-                                            <li><a title="pinterest" href="#" target="_blank"><img class="fn__svg" src="/images/svg/social/pinterest.svg" alt="svg"></a></li>
-                                            <li><a title="instagram" href="#" target="_blank"><img class="fn__svg" src="/images/svg/social/instagram.svg" alt="svg"></a></li>
+                                            <li><a title="facebook" href="https://www.facebook.com/profile.php?id=100016824821262" target="_blank"><img class="fn__svg" src="/images/svg/social/facebook.svg" alt="svg"></a></li>
+                                            <li><a title="twitter" href="https://twitter.com/devlikesbizness" target="_blank"><img class="fn__svg" src="/images/svg/social/twitter.svg" alt="svg"></a></li>
+                                            <li><a title="youtube" href="https://www.youtube.com/channel/UCW_EPM8iqmn27qeT65qLMug" target="_blank"><img class="fn__svg" src="/images/svg/social/youtube.svg" alt="svg"></a></li>
+                                            <li><a title="instagram" href="https://www.instagram.com/devlikesbizness/" target="_blank"><img class="fn__svg" src="/images/svg/social/instagram.svg" alt="svg"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1210,10 +1215,12 @@
                     <div class="fn_logo"><a href="../index.html"><img class="mobile_logo" src="/images/logo-transparent.png" alt="logo"><img class="mobile_retina_logo" src="/images/logo-transparent.png" alt="logo"></a></div>
                 </div>
                 <div class="right__triggerr">
-                    <a class="item_woo" href="#">
-                        <img class="fn__svg " src="/images/svg/cart.svg" alt="svg"> </a>
+                    {{-- <a class="item_woo" href="#">
+                        <img class="fn__svg " src="/images/svg/cart.svg" alt="svg">
+                    </a> --}}
                     <a class="mobsearch_opener" href="#">
-                        <img class="fn__svg " src="/images/svg/search.svg" alt="svg"> </a>
+                        <img class="fn__svg " src="/images/svg/search.svg" alt="svg">
+                    </a>
                     <a class="mobmenu_opener" href="#">
                         <span></span>
                     </a>
@@ -1223,64 +1230,53 @@
             <div class="mob_bot">
                 <div class="xoxo_fn_social_list">
                     <ul>
-                        <li><a title="facebook" href="#" target="_blank"><img class="fn__svg" src="/images/svg/social/facebook.svg" alt="svg"></a></li>
-                        <li><a title="twitter" href="#" target="_blank"><img class="fn__svg" src="/images/svg/social/twitter.svg" alt="svg"></a></li>
-                        <li><a title="pinterest" href="#" target="_blank"><img class="fn__svg" src="/images/svg/social/pinterest.svg" alt="svg"></a></li>
-                        <li><a title="instagram" href="#" target="_blank"><img class="fn__svg" src="/images/svg/social/instagram.svg" alt="svg"></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/profile.php?id=100016824821262" target="_blank"><img class="fn__svg" src="/images/svg/social/facebook.svg" alt="svg"></a></li>
+                        <li><a title="twitter" href="https://twitter.com/devlikesbizness" target="_blank"><img class="fn__svg" src="/images/svg/social/twitter.svg" alt="svg"></a></li>
+                        <li><a title="youtube" href="https://www.youtube.com/channel/UCW_EPM8iqmn27qeT65qLMug" target="_blank"><img class="fn__svg" src="/images/svg/social/youtube.svg" alt="svg"></a></li>
+                        <li><a title="instagram" href="https://www.instagram.com/devlikesbizness/" target="_blank"><img class="fn__svg" src="/images/svg/social/instagram.svg" alt="svg"></a></li>
                     </ul>
                 </div>
                 <div class="menu-main-menu-container">
                     <ul id="menu-main-menu-1" class="mobile_menu">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-130"><a href="../home-2-2/index.html"><span><span>Home</span><span class="suffix">//</span></span></a>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-130">
+                            <a href="/">
+                                <span>
+                                    <span>Home</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
+                            <a href="https://pocket-deals.com" target="_blank">
+                                <span>
+                                    <span>PocketFund</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-185">
+                            <a href="#">
+                                <span>
+                                    <span>Categories</span>
+                                </span>
+                            </a>
                             <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-134"><a href="../index.html"><span><span>Home #1</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="../home-2-2/index.html"><span><span>Home #2</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="../home-3/index.html"><span><span>Home #3</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-126 current_page_item menu-item-132"><a href="index.html"><span><span>Home #4</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a href="../home-5/index.html"><span><span>Home #5</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-197"><a href="https://fn_ex_link/?frenify_ads"><span><span>Home
-                                                Ads</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-288"><a href="https://fn_ex_link/?frenify_rtl_enabled"><span><span>Home
-                                                RTL</span><span class="suffix">//</span></span></a></li>
+                                @foreach($categories as $category)
+                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140">
+                                        <a href="{{ $category->link }}">
+                                            <span>
+                                                <span>{{ $category->name }}</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-184"><a href="#"><span><span>Post Styles</span><span class="suffix">//</span></span></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-154"><a href="../a-search-tool-for-serendipity/index.html"><span><span>Audio
-                                                Post</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-156"><a href="../in-praise-of-quiet-resistance/index.html"><span><span>Video
-                                                Post</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-155"><a href="../working-from-home-tanked-my-productivity/index.html"><span><span>Gallery
-                                                Post</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-160"><a href="../the-data-informed-manifesto/index.html"><span><span>Standard
-                                                Post</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158"><a href="../its-not-just-the-passing-of-a-queen/index.html"><span><span>Quote
-                                                Post</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-157"><a href="../your-table-sugar-may-not-be-vegan/index.html"><span><span>Status
-                                                Post</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-159"><a href="../the-absolutely-ridiculous-history/index.html"><span><span>Link
-                                                Post</span><span class="suffix">//</span></span></a></li>
-                            </ul>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152">
+                            <a href="/contact">
+                                <span>
+                                    <span>Contact</span>
+                                </span>
+                            </a>
                         </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-185"><a href="#"><span><span>Categories</span><span class="suffix">//</span></span></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140"><a href="../category/fashion/index.html"><span><span>Fashion</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-138"><a href="../category/health/index.html"><span><span>Health</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-141"><a href="../category/food/index.html"><span><span>Food</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-137"><a href="../category/lifestyle/index.html"><span><span>Lifestyle</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-139"><a href="../category/interior/index.html"><span><span>Interior</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136"><a href="../category/travel/index.html"><span><span>Travel</span><span class="suffix">//</span></span></a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-269"><a href="../shop/index.html"><span><span>Shop</span><span class="suffix">//</span></span></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="../shop/index.html"><span><span>Shop</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="../cart/index.html"><span><span>Cart</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="../cart/index.html"><span><span>Checkout</span><span class="suffix">//</span></span></a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="../my-account/index.html"><span><span>My account</span><span class="suffix">//</span></span></a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152"><a href="../contact-page/index.html"><span><span>Contact</span><span class="suffix">//</span></span></a></li>
                     </ul>
                 </div>
             </div>
