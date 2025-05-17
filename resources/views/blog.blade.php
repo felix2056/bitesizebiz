@@ -45,18 +45,18 @@
                                 <div class="xoxo_fn_bloglist blog_layout_masonry">
                                     <ul id="blog-posts-container">
                                         @foreach ($posts as $post)
-                                            @if ($post->type === "link")
-                                                @include('partials.link-post', ['post' => $post])
-                                            @elseif ($post->type === "video")
-                                                @include('partials.video-post', ['post' => $post])
-                                            @else
-                                                @include('partials.post', ['post' => $post])
-                                            @endif
+                                        @if ($post->type === "link")
+                                        @include('partials.link-post', ['post' => $post])
+                                        @elseif ($post->type === "video")
+                                        @include('partials.video-post', ['post' => $post])
+                                        @else
+                                        @include('partials.post', ['post' => $post])
+                                        @endif
 
-                                            {{-- Insert trending posts after the 5th post --}}
-                                            @if ($loop->index == 4)
-                                                @include('partials.trending-posts')
-                                            @endif
+                                        {{-- Insert trending posts after the 5th post --}}
+                                        @if ($loop->index == 4)
+                                        @include('partials.trending-posts')
+                                        @endif
                                         @endforeach
                                     </ul>
                                 </div>
@@ -67,33 +67,33 @@
                                         <div class="pag_in">
                                             <div class="pag_inner">
                                                 @if ($posts->hasPages())
-                                                    <span class="left_wing"></span>
-                                                    <span class="right_wing"></span>
+                                                <span class="left_wing"></span>
+                                                <span class="right_wing"></span>
 
-                                                    <ul>
-                                                        {{-- Previous Page Link --}}
-                                                        @if ($posts->onFirstPage())
-                                                            <li class="disabled"><span>&laquo;</span></li>
-                                                        @else
-                                                            <li><a href="{{ $posts->previousPageUrl() }}" rel="prev">&laquo;</a></li>
-                                                        @endif
+                                                <ul>
+                                                    {{-- Previous Page Link --}}
+                                                    @if ($posts->onFirstPage())
+                                                    <li class="disabled"><span>&laquo;</span></li>
+                                                    @else
+                                                    <li><a href="{{ $posts->previousPageUrl() }}" rel="prev">&laquo;</a></li>
+                                                    @endif
 
-                                                        {{-- Pagination Elements --}}
-                                                        @foreach ($posts->getUrlRange(1, $posts->lastPage()) as $page => $url)
-                                                            @if ($page == $posts->currentPage())
-                                                                <li class="active"><span class="current">{{ $page }}</span></li>
-                                                            @else
-                                                                <li><a href="{{ $url }}" class="inactive">{{ $page }}</a></li>
-                                                            @endif
-                                                        @endforeach
+                                                    {{-- Pagination Elements --}}
+                                                    @foreach ($posts->getUrlRange(1, $posts->lastPage()) as $page => $url)
+                                                    @if ($page == $posts->currentPage())
+                                                    <li class="active"><span class="current">{{ $page }}</span></li>
+                                                    @else
+                                                    <li><a href="{{ $url }}" class="inactive">{{ $page }}</a></li>
+                                                    @endif
+                                                    @endforeach
 
-                                                        {{-- Next Page Link --}}
-                                                        @if ($posts->hasMorePages())
-                                                            <li><a href="{{ $posts->nextPageUrl() }}" rel="next">&raquo;</a></li>
-                                                        @else
-                                                            <li class="disabled"><span>&raquo;</span></li>
-                                                        @endif
-                                                    </ul>
+                                                    {{-- Next Page Link --}}
+                                                    @if ($posts->hasMorePages())
+                                                    <li><a href="{{ $posts->nextPageUrl() }}" rel="next">&raquo;</a></li>
+                                                    @else
+                                                    <li class="disabled"><span>&raquo;</span></li>
+                                                    @endif
+                                                </ul>
                                                 @endif
                                             </div>
                                         </div>
@@ -106,8 +106,8 @@
                     </div>
                 </div>
             </div>
+            <!-- /WITH SIDEBAR -->
         </div>
-        <!-- /WITH SIDEBAR -->
     </div>
 </div>
 @endsection

@@ -58,7 +58,10 @@
     <link rel="stylesheet" id="xoxo-fn-fontello-css" href="/wp-content/themes/xoxo/framework/css/fontello_ver%3Drel4_1.1.0.css" type="text/css" media="all">
     <link rel="stylesheet" id="xoxo-fn-widgets-css" href="/wp-content/themes/xoxo/framework/css/widgets_ver%3Drel4_1.1.0.css" type="text/css" media="all">
     <link rel="stylesheet" id="xoxo-fn-woocommerce-css" href="/wp-content/themes/xoxo/config/config-woo/woocommerce_ver%3Drel4_1.1.0.css" type="text/css" media="all">
+    
     <link rel="stylesheet" id="xoxo-fn-stylesheet-css" href="/wp-content/themes/xoxo/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" id="xoxo-fn-responsive-css" href="/wp-content/themes/xoxo/responsive.css" type="text/css" media="all">
+
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Work%20Sans:400%7CMontserrat:400&amp;display=swap&amp;ver=1683456420">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work%20Sans:400%7CMontserrat:400&amp;display=swap&amp;ver=1683456420" media="print" onload="this.media='all'">
     <link rel="stylesheet" id="xoxo_fn_inline-css" href="/wp-content/themes/xoxo/framework/css/inline_ver%3Dhttps_/frenify.com/work/envato/frenify/wp/xoxo/2/wp-content/themes/xoxo.css" type="text/css" media="all">
