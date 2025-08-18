@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
-Route::get('/', [App\Http\Controllers\IndexController::class, 'blog']);
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
+Route::get('/blog', [App\Http\Controllers\IndexController::class, 'blog']);
 Route::match(['get', 'post'], '/contact', [App\Http\Controllers\IndexController::class, 'contact']);
 
 Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'show']);

@@ -778,7 +778,7 @@
     /* 19. count-style */
     .count-style {
         padding: 50px 85px;
-        background-color: var(--bgcolor);
+        background-color: #fff;
         border-radius: 30px;
         text-align: center;
         padding-bottom: 60px;
@@ -1160,6 +1160,105 @@
         background-size: cover;
     }
 
+    /* 3-Step Process Styles */
+    .process-steps {
+        margin: 40px 0;
+    }
+
+    .step-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 30px 0;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgb(14 14 14);
+        border-radius: 15px;
+        padding: 25px 20px;
+        min-width: 200px;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .step:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .step-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        font-size: 24px;
+        color: white;
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .step:nth-child(3) .step-icon {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        box-shadow: 0 5px 15px rgba(240, 147, 251, 0.4);
+    }
+
+    .step:nth-child(5) .step-icon {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+    }
+
+    .step-content h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .step-content p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    .step-arrow {
+        font-size: 24px;
+        margin: 0 10px;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .step-container {
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .step-arrow {
+            transform: rotate(90deg);
+            margin: 10px 0;
+        }
+        
+        .step {
+            min-width: 250px;
+        }
+    }
+
 
     /* 28. transition */
     .get-in-touch i,
@@ -1190,17 +1289,59 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="hero-text sec-title-animation animation-style2">
-                    <span class="title-animation" style="perspective: 400px;">Trusted by 500+ Investors, 100+ Deals Live Now</span>
+                    <span class="title-animation" style="perspective: 400px;">Micro Private Equity • $5K-$25K Deals • Online Businesses Only</span>
                     
-                    <h1>From Zero to Business Owner for under $25k</h1>
+                    <h1>Your 3-Step Path to Business Ownership</h1>
+                    
+                    <div class="process-steps">
+                        <div class="step-container">
+                            <div class="step">
+                                <div class="step-icon">
+                                    <i class="fa-solid fa-search"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h3>Step 1: Find & Buy</h3>
+                                    <p>Browse curated online businesses vetted by professionals</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-icon">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h3>Step 2: Run & Scale</h3>
+                                    <p>Operate for 12 months with our expert guidance</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-icon">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h3>Step 3: Exit & Profit</h3>
+                                    <p>Sell at 5x valuation and repeat the process</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="d-flex listing">
-                        <p>Join hundreds of first-time investors who’ve turned small budgets into profitable online businesses. Backed by expert support every step of the way.</p>
+                        <p>Join Dev Shah's micro private equity firm and turn small investments into significant returns. Perfect for first-time investors looking to enter the online business world.</p>
                     </div>
                 </div>
 
                 <div class="review">
-                    <a href="/find-my-business" class="button btn" style="margin: 0 auto;"><span>Find My Business</span></a>
+                    <a href="/listings" class="button btn" style="margin: 0 auto;"><span>See Listings</span></a>
                     {{-- <img alt="img" src="/images/google.png"> --}}
                     <ul class="star">
                         <li><i class="fa-solid fa-star"></i></li>

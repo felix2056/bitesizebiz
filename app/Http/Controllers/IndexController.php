@@ -13,7 +13,14 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $posts = Post::where('is_published', true)
+            ->where('type', '!=', 'video')
+            ->where('type', '!=', 'link')
+            ->orderBy('created_at', 'desc')
+            ->limit(3)
+            ->get();
+
+        return view('index', compact('posts'));
     }
 
     public function contact(Request $request)

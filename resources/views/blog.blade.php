@@ -13,9 +13,7 @@
         <div class="xoxo_fn_index">
             <div class="fn__bp_slider" data-animation="disable">
                 <div class="container">
-                    @include('partials.hero')
-
-                    {{-- <div class="bp_slider_in">
+                    <div class="bp_slider_in">
                         <div class="swiper-container">
                             <div class="swiper-wrapper" id="slider-blog-posts-container">
                                 @foreach ($posts as $post)
@@ -32,7 +30,7 @@
                                 <img class="fn__svg " src="/images/svg/arrowo.svg" alt="svg">
                             </a>
                         </div>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
 

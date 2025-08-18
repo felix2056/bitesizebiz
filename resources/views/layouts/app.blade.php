@@ -8,7 +8,7 @@
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
     <meta name="author" content="@yield('author')">
-    
+
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="@yield('title') | BuyingABiz">
@@ -35,15 +35,8 @@
     <meta name="generator" content="Redux 4.3.17">
 
     <link rel="canonical" href="@yield('canonical')">
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffrenify.com%2Fwork%2Fenvato%2Ffrenify%2Fwp%2Fxoxo%2F2%2Fhome-4%2F">
-    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffrenify.com%2Fwork%2Fenvato%2Ffrenify%2Fwp%2Fxoxo%2F2%2Fhome-4%2F&amp;format=xml">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
-    <link rel="alternate" type="application/rss+xml" title="Xoxo » Feed" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Xoxo » Comments Feed" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/comments/feed/">
-    <link rel="alternate" title="JSON" type="application/json" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/wp-json/wp/v2/pages/126">
-    <link rel="https://api.w.org/" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/wp-json/">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://frenify.com/work/envato/frenify/wp/xoxo/2/xmlrpc.php?rsd">
 
     {{-- wp block library css --}}
     <link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min_ver%3D6.7.2.css" type="text/css" media="all">
@@ -62,6 +55,9 @@
 
     {{-- font awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    {{-- bootstrap --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
     {{-- main css --}}
     <link rel="stylesheet" id="xoxo-fn-stylesheet-css" href="/wp-content/themes/xoxo/styles.css" type="text/css" media="all">
@@ -622,15 +618,6 @@
 
     </style>
 
-    <noscript>
-        <style>
-            .woocommerce-product-gallery {
-                opacity: 1 !important;
-            }
-
-        </style>
-    </noscript>
-
     <style class="wp-fonts-local" type="text/css">
         @font-face {
             font-family: Inter;
@@ -806,33 +793,6 @@
     <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min_ver%3D3.7.1.js" id="jquery-core-js"></script>
     <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min_ver%3D3.4.1.js" id="jquery-migrate-js"></script>
     <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min_ver%3D2.7.0-wc.9.3.3.js" id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
-    <script type="text/javascript" id="wc-add-to-cart-js-extra">
-        /* <![CDATA[ */
-        var wc_add_to_cart_params = {
-            "ajax_url": "\/work\/envato\/frenify\/wp\/xoxo\/2\/wp-admin\/admin-ajax.php"
-            , "wc_ajax_url": "\/work\/envato\/frenify\/wp\/xoxo\/2\/?wc-ajax=%%endpoint%%"
-            , "i18n_view_cart": "View cart"
-            , "cart_url": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/xoxo\/2\/cart\/"
-            , "is_cart": ""
-            , "cart_redirect_after_add": "no"
-        };
-        /* ]]> */
-
-    </script>
-
-    <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min_ver%3D9.3.3.js" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
-    <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min_ver%3D2.1.4-wc.9.3.3.js" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
-    <script type="text/javascript" id="woocommerce-js-extra">
-        /* <![CDATA[ */
-        var woocommerce_params = {
-            "ajax_url": "\/work\/envato\/frenify\/wp\/xoxo\/2\/wp-admin\/admin-ajax.php"
-            , "wc_ajax_url": "\/work\/envato\/frenify\/wp\/xoxo\/2\/?wc-ajax=%%endpoint%%"
-        };
-        /* ]]> */
-
-    </script>
-    <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min_ver%3D9.3.3.js" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
-    <script type="text/javascript" src="/wp-content/themes/xoxo/framework/js/modernizr.custom_ver%3Drel4_1.1.0.js" id="modernizr-custom-js"></script>
 </head>
 
 <body class="page-template page-template-page-blog page-template-page-blog-php page page-id-126 theme-xoxo woocommerce-no-js">
@@ -949,20 +909,14 @@
                                                 </a>
                                             </li>
 
-                                            {{-- <li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-269">
-                                                <a href="/shop">
+                                            <li id="menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
+                                                <a href="/blog">
                                                     <span>
-                                                        <span>Shop</span>
+                                                        <span>Blog</span>
                                                         <span class="suffix">//</span>
                                                     </span>
                                                 </a>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="/shop"><span><span>Shop</span><span class="suffix">//</span></span></a></li>
-                                                    <li id="menu-item-272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="/cart"><span><span>Cart</span><span class="suffix">//</span></span></a></li>
-                                                    <li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="/checkout"><span><span>Checkout</span><span class="suffix">//</span></span></a></li>
-                                                    <li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="/my-account"><span><span>My account</span><span class="suffix">//</span></span></a></li>
-                                                </ul>
-                                            </li> --}}
+                                            </li>
 
                                             <li id="menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
                                                 <a href="https://pocket-deals.com" target="_blank">
@@ -974,7 +928,7 @@
                                             </li>
 
                                             @php
-                                                $categories = \App\Models\Category::all();
+                                            $categories = \App\Models\Category::all();
                                             @endphp
                                             <li id="menu-item-185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-185">
                                                 <a href="#">
@@ -985,13 +939,13 @@
                                                 </a>
                                                 <ul class="sub-menu">
                                                     @foreach($categories as $category)
-                                                        <li id="menu-item-140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140">
-                                                            <a href="{{ $category->link }}">
-                                                                <span>
-                                                                    <span>{{ $category->name }}</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
+                                                    <li id="menu-item-140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140">
+                                                        <a href="{{ $category->link }}">
+                                                            <span>
+                                                                <span>{{ $category->name }}</span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
                                                     @endforeach
                                                 </ul>
                                             </li>
@@ -1041,6 +995,15 @@
                                         </li>
 
                                         <li id="menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
+                                            <a href="/blog">
+                                                <span>
+                                                    <span>Blog</span>
+                                                    <span class="suffix">//</span>
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li id="menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
                                             <a href="https://pocket-deals.com" target="_blank">
                                                 <span>
                                                     <span>PocketFund</span>
@@ -1058,13 +1021,13 @@
                                             </a>
                                             <ul class="sub-menu">
                                                 @foreach($categories as $category)
-                                                    <li id="menu-item-140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140">
-                                                        <a href="{{ $category->link }}">
-                                                            <span>
-                                                                <span>{{ $category->name }}</span>
-                                                            </span>
-                                                        </a>
-                                                    </li>
+                                                <li id="menu-item-140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140">
+                                                    <a href="{{ $category->link }}">
+                                                        <span>
+                                                            <span>{{ $category->name }}</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
                                                 @endforeach
                                             </ul>
                                         </li>
@@ -1246,6 +1209,13 @@
                             </a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
+                            <a href="/blog">
+                                <span>
+                                    <span>Blog</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184">
                             <a href="https://pocket-deals.com" target="_blank">
                                 <span>
                                     <span>PocketFund</span>
@@ -1260,13 +1230,13 @@
                             </a>
                             <ul class="sub-menu">
                                 @foreach($categories as $category)
-                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140">
-                                        <a href="{{ $category->link }}">
-                                            <span>
-                                                <span>{{ $category->name }}</span>
-                                            </span>
-                                        </a>
-                                    </li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140">
+                                    <a href="{{ $category->link }}">
+                                        <span>
+                                            <span>{{ $category->name }}</span>
+                                        </span>
+                                    </a>
+                                </li>
                                 @endforeach
                             </ul>
                         </li>
@@ -1288,7 +1258,12 @@
 
             <div class="clearfix"></div>
 
-            <!-- Footer -->
+            @php
+                $isBlog = request()->is('blog') || request()->is('blog/*');
+            @endphp
+
+            @if($isBlog)
+            <!-- Blog Footer -->
             <footer id="xoxo_fn_footer">
                 <div class="xoxo_fn_footer">
                     <div class="footer_top">
@@ -1350,7 +1325,95 @@
                         </div>
                     </div>
             </footer>
-            <!-- !Footer -->
+            <!-- !Blog Footer -->
+            @else
+            <!-- Home Footer -->
+            <footer class="gap no-bottom" style="background-image: url(/images/footer.jpg);">
+                <div class="container">
+                    <div class="footer-try">
+                        <div>
+                            <h2>Ready to Start Your Investment Journey?</h2>
+                            <p>Join hundreds of successful investors who've built portfolios of online businesses through our micro private equity platform.</p>
+                        </div>
+                        <a href="https://pocket-deals.com" target="_blank" class="button btn"><span><span>Browse Deals</span></span></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-logo">
+                                <img src="/images/logo-transparent.png" alt="img">
+                                <p>Your gateway to micro private equity investing. We help first-time investors acquire and scale online businesses from $5K to $100K+ with expert guidance and proven strategies.</p>
+                                <ul class="social-media">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="widget-title">
+                                <h3>Investor Resources</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="/blog">Investment Guides</a></li>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="/blog">Due Diligence Tips</a></li>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="/blog">Case Studies</a></li>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="#faq">FAQ</a></li>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="https://pocket-deals.com" target="_blank">Browse Deals</a></li>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="/blog">Market Insights</a></li>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="/blog">Exit Strategies</a></li>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="/blog">Portfolio Building</a></li>
+                                    <li><i class="fa-solid fa-angles-right"></i><a href="/blog">Risk Management</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="widget-title">
+                                <h3>Get In Touch</h3>
+                                <div class="get-in-touch">
+                                    <div><i class="flaticon-map-location"></i></div>
+                                    <div>
+                                        <span>Email:</span>
+                                        <h6><a href="mailto:dev@buyingabiz.com">dev@buyingabiz.com</a></h6>
+                                    </div>
+                                </div>
+                                <div class="get-in-touch">
+                                    <div><i class="flaticon-iphone"></i></div>
+                                    <div>
+                                        <span>Newsletter:</span>
+                                        <h6><a href="#subscribe">Join 4,000+ Investors</a></h6>
+                                    </div>
+                                </div>
+                                <div class="get-in-touch mb-0">
+                                    <div><i class="flaticon-mail-inbox-app"></i></div>
+                                    <div>
+                                        <span class="pt-2 pb-0">Ready to start investing? Browse our curated selection of online businesses and begin your micro private equity journey today.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-rights">
+                        <p>© 2025 BuyingABiz. All Rights Reserved. | Micro Private Equity Platform</p>
+                        <div class="review">
+                            <img alt="img" src="/images/google-w.png">
+                            <ul class="star">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <h6>(5.0) </h6>
+                        </div>
+                    </div>
+                </div>
+                <ul class="shaps-img">
+                    <li><img src="/images/shaps-4.png" alt="img"></li>
+                    <li><img src="/images/shaps-1.png" alt="img"></li>
+                    <li><img src="/images/shaps-2.png" alt="img"></li>
+                </ul>
+            </footer>
+            <!-- !Home Footer -->
+            @endif
         </div>
     </div>
 
@@ -1479,5 +1542,42 @@
     <script type="text/javascript" src="/wp-content/themes/xoxo/framework/js/init_ver%3Drel4_1.1.0.js" id="xoxo-fn-init-js"></script>
     <script type="text/javascript" src="/wp-includes/js/comment-reply.min_ver%3D6.7.2.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
     <script type="text/javascript" defer src="/wp-content/plugins/mailchimp-for-wp/assets/js/forms_ver%3D4.9.17.js" id="mc4wp-forms-api-js"></script>
+    
+    <!-- Interactive FAQ Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const heading = item.querySelector('.heading');
+                const content = item.querySelector('.content');
+                const icon = item.querySelector('.icon');
+                
+                heading.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Close all other accordion items
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            const otherContent = otherItem.querySelector('.content');
+                            otherContent.style.display = 'none';
+                        }
+                    });
+                    
+                    // Toggle current item
+                    const isActive = item.classList.contains('active');
+                    
+                    if (isActive) {
+                        item.classList.remove('active');
+                        content.style.display = 'none';
+                    } else {
+                        item.classList.add('active');
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
