@@ -71,6 +71,20 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work%20Sans:400%7CMontserrat:400&#038;display=swap&#038;ver=1683456420" />
     </noscript>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPNPVDLP0B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HPNPVDLP0B');
+
+    </script>
+
     <style>
         img:is([sizes="auto"i], [sizes^="auto,"i]) {
             contain-intrinsic-size: 3000px 1500px
@@ -1259,7 +1273,7 @@
             <div class="clearfix"></div>
 
             @php
-                $isBlog = request()->is('blog') || request()->is('blog/*');
+            $isBlog = request()->is('blog') || request()->is('blog/*');
             @endphp
 
             @if($isBlog)
@@ -1542,20 +1556,20 @@
     <script type="text/javascript" src="/wp-content/themes/xoxo/framework/js/init_ver%3Drel4_1.1.0.js" id="xoxo-fn-init-js"></script>
     <script type="text/javascript" src="/wp-includes/js/comment-reply.min_ver%3D6.7.2.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
     <script type="text/javascript" defer src="/wp-content/plugins/mailchimp-for-wp/assets/js/forms_ver%3D4.9.17.js" id="mc4wp-forms-api-js"></script>
-    
+
     <!-- Interactive FAQ Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const accordionItems = document.querySelectorAll('.accordion-item');
-            
+
             accordionItems.forEach(item => {
                 const heading = item.querySelector('.heading');
                 const content = item.querySelector('.content');
                 const icon = item.querySelector('.icon');
-                
+
                 heading.addEventListener('click', function(e) {
                     e.preventDefault();
-                    
+
                     // Close all other accordion items
                     accordionItems.forEach(otherItem => {
                         if (otherItem !== item) {
@@ -1564,10 +1578,10 @@
                             otherContent.style.display = 'none';
                         }
                     });
-                    
+
                     // Toggle current item
                     const isActive = item.classList.contains('active');
-                    
+
                     if (isActive) {
                         item.classList.remove('active');
                         content.style.display = 'none';
@@ -1578,6 +1592,7 @@
                 });
             });
         });
+
     </script>
 </body>
 </html>
